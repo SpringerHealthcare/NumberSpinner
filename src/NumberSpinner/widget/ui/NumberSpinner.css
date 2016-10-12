@@ -1,0 +1,9 @@
+.dijitSpinner .dijitArrowButtonInner .dijitInputField {
+  visibility: visible !important;
+  transform-origin: center top;
+  transform: scale(0.7);
+}
+
+.dijitButtonNode {
+  border: 0px;
+}

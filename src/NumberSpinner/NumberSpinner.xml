@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<widget id="NumberSpinner.widget.NumberSpinner" needsEntityContext="true" xmlns="http://www.mendix.com/widget/1.0/">
+    <name>NumberSpinner</name>
+    <description>The description of this widget.</description>
+
+    <icon />
+
+    <properties>
+        <property key="minValue" type="integer" defaultValue="0" required="true">
+          <caption>Minimum Value</caption>
+          <category>Configuration</category>
+          <description>The minimum value allowed in the widget</description>
+        </property>
+        <property key="maxValue" type="integer" defaultValue="1000" required="true">
+          <caption>Maximum Value</caption>
+          <category>Configuration</category>
+          <description>The maximum value allowed in the widget</description>
+        </property>
+        <property key="smallDelta" type="integer" defaultValue="1">
+          <caption>Small Increment</caption>
+          <category>Configuration</category>
+          <description>The increment each time the up/down keys are used</description>
+        </property>
+        <property key="largeDelta" type="integer" defaultValue="10">
+          <caption>Large Increment</caption>
+          <category>Configuration</category>
+          <description>The increment each time the Page up/down keys are used</description>
+        </property>
+        <property key="valueAttribute" type="attribute" required="true">
+          <caption>Value Attribute</caption>
+          <category>Data Source</category>
+          <description>Data source for binding to the widget</description>
+          <attributeTypes>
+            <attributeType name="Integer" />
+            <attributeType name="Decimal" />
+          </attributeTypes>
+        </property>
+        <property key="showLabel" type="boolean" defaultValue="true">
+          <caption>Show Label</caption>
+          <category>Control Display</category>
+          <description>Show a label for the field.</description>
+        </property>
+        <property key="fieldCaption" type="translatableString" required="false" multiline="false">
+          <caption>Label Caption</caption>
+          <category>Control Display</category>
+          <description>Specify the caption to use for the field</description>
+        </property>
+        <property key="formOrientation" type="enumeration" defaultValue="horizontal">
+          <caption>Form Orientation</caption>
+          <category>Control Display</category>
+          <description>The orientation of the form</description>
+          <enumerationValues>
+            <enumerationValue key="horizontal">Horizontal</enumerationValue>
+            <enumerationValue key="vertical">Vertical</enumerationValue>
+          </enumerationValues>
+        </property>
+        <property key="labelWidth" type="integer" defaultValue="4">
+          <caption>Label Width (weight)</caption>
+          <category>Control Display</category>
+          <description>The column size of the label control (only applied with horizontal orientation)</description>
+        </property>
+        <property key="invalidMessage" type="translatableString" required="true" multiline="false">
+          <caption>Invalid Message Text</caption>
+          <category>Control Display</category>
+          <description>Text to be displayed when entered value is invalid</description>
+        </property>
+    </properties>
+</widget>
